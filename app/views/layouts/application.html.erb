@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JeanApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" a:focus {
+    background-color: #FFFF00;
+    color: #FFC0CB;
+}>Jean App</a>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <%= link_to 'Lists', lists_path, class: 'nav-item nav-link' %>
+      <%= link_to 'Items', items_path, class: 'nav-item nav-link' %>
+    </div>
+  </div>
+</nav>
+
+<main class="container" role="main">
+</main>
+    <%= yield %>
+  </body>
+</html>
